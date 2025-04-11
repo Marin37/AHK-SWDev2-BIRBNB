@@ -1,5 +1,9 @@
-package com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities;
+package com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities.reservas;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,9 +11,14 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
+@Embeddable
 public class RangoFechas {
-    private LocalDate fechaInicio;
+
+    @Column(columnDefinition = "DATE")
     private LocalDate fechaFin;
+
+    @Column(columnDefinition = "DATE")
+    private LocalDate fechaInicio;
 
     public Boolean hayColisionCon(RangoFechas otroRango) {
         // Check (periodo) < start or newEnd == oldStart

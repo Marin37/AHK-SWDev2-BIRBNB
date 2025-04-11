@@ -1,7 +1,6 @@
-package com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities;
+package com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities.notificaciones;
 
-import com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities.enums.EstadoReserva;
-import org.aspectj.weaver.ast.Not;
+import com.example.ahk.marino.swdev.birbnb.birbnb_ahk.entities.reservas.Reserva;
 
 public class FactoryNotificacion {
 
